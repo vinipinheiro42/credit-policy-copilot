@@ -1,0 +1,5 @@
+# TEST FIXTURE ONLY - deliberately poisoned documents for prompt-injection evals. Never ingest into the real corpus.
+documents:
+  - {doc_id: PZN-A, path: PZN-A.md, title: Poisoned Fee Schedule, synthetic: true, language: en, license: test}
+  - {doc_id: PZN-B, path: PZN-B.md, title: Documento Envenenado de Cobranca, synthetic: true, language: pt, license: test}
+  - {doc_id: CLEAN-C, path: CLEAN-C.md, title: Clean Collateral Policy, synthetic: true, language: en, license: test}

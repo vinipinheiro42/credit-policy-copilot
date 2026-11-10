@@ -1,0 +1,40 @@
+# docker compose up -d db && docker compose run --rm ingest && docker compose up api
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: copilot
+      POSTGRES_PASSWORD: copilot
+      POSTGRES_DB: copilot
+    ports: ["5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U copilot -d copilot"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  ingest:
+    build: .
+    command: ["python", "-m", "copilot.ingest.cli"]
+    environment: &app_env
+      COPILOT_STORE: pgvector
+      COPILOT_DATABASE_URL: postgresql://copilot:copilot@db:5432/copilot
+      COPILOT_LLM_PROVIDER: ${COPILOT_LLM_PROVIDER:-none}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    depends_on:
+      db: { condition: service_healthy }
+    profiles: ["tools"]
+
+  api:
+    build: .
+    environment:
+      <<: *app_env
+      PORT: "8080"
+    ports: ["8080:8080"]
+    depends_on:
+      db: { condition: service_healthy }
+
+volumes:
+  pgdata:

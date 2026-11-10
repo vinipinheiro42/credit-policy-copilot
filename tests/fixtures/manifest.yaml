@@ -1,0 +1,13 @@
+documents:
+  - doc_id: POL-A
+    path: POL-A.md
+    title: Test Card Policy
+    synthetic: true
+    language: en
+    license: test
+  - doc_id: POL-B
+    path: POL-B.md
+    title: Test KYC Policy
+    synthetic: true
+    language: en
+    license: test

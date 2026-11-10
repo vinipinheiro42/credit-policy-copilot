@@ -1,0 +1,129 @@
+# Corpus manifest. Every indexed document must be listed here.
+# sha256 is the hash of the file as stored in this repo (recompute: python scripts/manifest_hashes.py --write).
+# Meridian Bank is fictional. No employer data, code or names are used anywhere in this corpus.
+synthetic_license: &synthetic_license >-
+  Original synthetic content written for this project (fictional Meridian Bank);
+  released under the repository MIT license.
+
+documents:
+  - doc_id: MB-POL-001
+    path: synthetic/MB-POL-001_credit_card_underwriting.md
+    sha256: c766b11d9e0b977ff2c91bbe47253204dc7218599e2d17ac5decca602ec1c389
+    title: Credit Card Underwriting Policy
+    synthetic: true
+    language: en
+    license: *synthetic_license
+    source_url: null
+    retrieved: null
+  - doc_id: MB-POL-002
+    path: synthetic/MB-POL-002_personal_loan_limits.md
+    sha256: 652f828b42e44a7bc8adf8cb8d84130905e52f4c437d09a9c782dbed88bbe218
+    title: Personal Loan Limits and Pricing Policy
+    synthetic: true
+    language: en
+    license: *synthetic_license
+    source_url: null
+    retrieved: null
+  - doc_id: MB-POL-003
+    path: synthetic/MB-POL-003_collateral_secured_lending.md
+    sha256: 4c2c867e20d38fcb7feea576efd91f9f1e775b72676c034d48a527d667859098
+    title: Collateral and Secured Lending Policy
+    synthetic: true
+    language: en
+    license: *synthetic_license
+    source_url: null
+    retrieved: null
+  - doc_id: MB-POL-004
+    path: synthetic/MB-POL-004_delinquency_collections.md
+    sha256: fc47426033ac31fbe51d7c0748d2d93ddb151145c742e454673250085cdd1a1e
+    title: Delinquency Management and Collections Policy
+    synthetic: true
+    language: en
+    license: *synthetic_license
+    source_url: null
+    retrieved: null
+  - doc_id: MB-POL-005
+    path: synthetic/MB-POL-005_exceptions_approval_authority.md
+    sha256: f0689b927c9e98f5568c2dd21187123e3a76797dfba566508f1d809f919aea5e
+    title: Credit Policy Exceptions and Approval Authority Policy
+    synthetic: true
+    language: en
+    license: *synthetic_license
+    source_url: null
+    retrieved: null
+  - doc_id: MB-POL-006
+    path: synthetic/MB-POL-006_kyc_aml_due_diligence.md
+    sha256: a954c92cb0832ccf0fc87982423d76002fe3ab37f780259f4851cbaae3eec244
+    title: KYC and AML Customer Due Diligence Policy
+    synthetic: true
+    language: en
+    license: *synthetic_license
+    source_url: null
+    retrieved: null
+  - doc_id: MB-POL-007
+    path: synthetic/MB-POL-007_customer_data_privacy.md
+    sha256: 8cd002aa4dcd76e0e82d3beece72c85e9ca4509c8944be7bab4e6721204320be
+    title: Customer Data Privacy and Responsible Data Use Policy
+    synthetic: true
+    language: en
+    license: *synthetic_license
+    source_url: null
+    retrieved: null
+  - doc_id: MB-POL-008
+    path: synthetic/MB-POL-008_credit_glossary_faq.md
+    sha256: 00d2f01b4087e88e48740695c950cd0ab285411f4f0e60698def3061591dbb57
+    title: Retail Credit Glossary and Analyst FAQ
+    synthetic: true
+    language: en
+    license: *synthetic_license
+    source_url: null
+    retrieved: null
+
+  - doc_id: OCC-CH-CREDIT-CARD
+    path: public/occ-ch-credit-card-lending.pdf
+    sha256: 4e5f3de93605e1af597949e8af048ca27a1a9f3c4440a3f04ce8ca6b90e7b274
+    title: "Comptroller's Handbook: Credit Card Lending (Version 2.0, April 2021)"
+    publisher: Office of the Comptroller of the Currency (U.S.)
+    synthetic: false
+    language: en
+    source_url: https://www.occ.gov/publications-and-resources/publications/comptrollers-handbook/files/credit-card-lending/pub-ch-credit-card.pdf
+    retrieved: 2026-11-10
+    license: >-
+      U.S. federal government work prepared by OCC staff; not subject to U.S. copyright
+      (17 U.S.C. 105). No OCC-specific reuse statement was located; attribution retained.
+      Any third-party material inside keeps its own rights.
+  - doc_id: OCC-CH-RETAIL
+    path: public/occ-ch-retail-lending.pdf
+    sha256: 0463b2abbbfd183e477ee08a10cea3ebe5201f2e91f3c116d0a850cc0f22c5bb
+    title: "Comptroller's Handbook: Retail Lending (May 2018)"
+    publisher: Office of the Comptroller of the Currency (U.S.)
+    synthetic: false
+    language: en
+    source_url: https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/retail-lending/pub-ch-retail-lending.pdf
+    retrieved: 2026-11-10
+    license: >-
+      U.S. federal government work prepared by OCC staff; not subject to U.S. copyright
+      (17 U.S.C. 105). No OCC-specific reuse statement was located; attribution retained.
+  - doc_id: CMN-4966
+    path: public/cmn-resolucao-4966.md
+    sha256: 8a721760521dd58bf040040b49bedbcadd1d567c39b65ddf4b8aa7d04f39766b
+    title: "Resolução CMN nº 4.966, de 25 de novembro de 2021 (texto consolidado)"
+    publisher: Conselho Monetário Nacional / Banco Central do Brasil
+    synthetic: false
+    language: pt
+    source_url: https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolução CMN&numero=4966
+    retrieved: 2026-11-10
+    license: >-
+      Official normative act; not protected by copyright under Brazilian Law 9.610/1998,
+      art. 8, IV ("textos de ... leis, decretos, regulamentos ... e demais atos oficiais").
+      Plain-text rendering generated by scripts/fetch_public_docs.py from the BCB API
+      (raw JSON kept in public/raw/); superseded struck-through wording removed; the official text prevails.
+
+skipped:
+  - title: "Basel III: Finalising post-crisis reforms (BCBS d424)"
+    source_url: https://www.bis.org/bcbs/publ/d424.pdf
+    attempted: 2026-11-10
+    reason: >-
+      Download from this environment returned an HTML page instead of the PDF, and BIS reuse
+      terms for full redistribution were not confirmed (BIS publications are copyrighted).
+      Not included; candidate for M2 as a link-only reference.

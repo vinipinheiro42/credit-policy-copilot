@@ -1,0 +1,187 @@
+{
+  "request": {
+    "question": "Who must approve a DTI exception for a customer whose total exposure would be USD 40,000?",
+    "mode": null,
+    "rerank": null
+  },
+  "response": {
+    "answer": "Relevant policy text (extractive mode, no LLM):\n- Every exception requires approval one authority level above the level that would normally approve the exposure, with a minimum of Level 2. [1]\n- The total unsecured exposure of a customer across all Meridian Bank products (personal loans plus card limits plus overdraft limits) must not exceed USD 75,000. [2]\n- DTI limits may be exceeded by at most 5 percentage points through an approved exception under MB-POL-005. [3]",
+    "abstained": false,
+    "support_score": 0.8679,
+    "citations": [
+      {
+        "ref": 1,
+        "doc_id": "MB-POL-005",
+        "doc_title": "Credit Policy Exceptions and Approval Authority Policy",
+        "section": "3. Policy Exceptions > 3.3 Exception Limits and Required Approver",
+        "chunk_id": "MB-POL-005::3.-policy-exceptions/3.3-exception-limits-and-required-approver::b14be7830eff",
+        "snippet": "Every exception requires approval one authority level above the level that would normally approve the exposure, with a minimum of Level 2. Additional limits apply: - DTI may be exceeded by at most 5 percentage points. - Loan amounts may exceed the risk grade cap by at most 20%.…",
+        "page_start": null,
+        "source_url": null
+      },
+      {
+        "ref": 2,
+        "doc_id": "MB-POL-002",
+        "doc_title": "Personal Loan Limits and Pricing Policy",
+        "section": "2. Product Parameters > 2.2 Aggregate Unsecured Exposure",
+        "chunk_id": "MB-POL-002::2.-product-parameters/2.2-aggregate-unsecured-exposure::947b9fbc34e5",
+        "snippet": "The total unsecured exposure of a customer across all Meridian Bank products (personal loans plus card limits plus overdraft limits) must not exceed USD 75,000. Any approval above this amount requires Credit Committee approval under MB-POL-005.",
+        "page_start": null,
+        "source_url": null
+      },
+      {
+        "ref": 3,
+        "doc_id": "MB-POL-002",
+        "doc_title": "Personal Loan Limits and Pricing Policy",
+        "section": "3. Limits by Risk Grade",
+        "chunk_id": "MB-POL-002::3.-limits-by-risk-grade::3710557f3a3c",
+        "snippet": "Risk grades use the Meridian Risk Score table defined in MB-POL-001 section 3.1. | Risk grade | Maximum loan amount (USD) | Maximum DTI | APR band | |---|---|---|---| | A | 50,000 | 45% | 7.99% to 11.99% | | B | 35,000 | 45% | 12.00% to 16.99% | | C | 20,000 | 40% | 17.00% to…",
+        "page_start": null,
+        "source_url": null
+      }
+    ],
+    "contexts": [
+      {
+        "rank": 1,
+        "chunk_id": "MB-POL-005::3.-policy-exceptions/3.3-exception-limits-and-required-approver::b14be7830eff",
+        "doc_id": "MB-POL-005",
+        "doc_title": "Credit Policy Exceptions and Approval Authority Policy",
+        "section": "3. Policy Exceptions > 3.3 Exception Limits and Required Approver",
+        "text": "Every exception requires approval one authority level above the level that would normally approve the exposure, with a minimum of Level 2. Additional limits apply:\n\n- DTI may be exceeded by at most 5 percentage points.\n- Loan amounts may exceed the risk grade cap by at most 20%.\n- No more than one exception may be granted on a single application; applications that need two or more exceptions must go to the Retail Credit Committee.\n- LTV exceptions also require Collateral Committee approval under MB-POL-003 section 6.",
+        "scores": {
+          "bm25_rank": 1.0,
+          "bm25": 24.4561,
+          "vector_rank": 1.0,
+          "vector_sim": 0.8679,
+          "rrf": 0.032787
+        },
+        "metadata": {
+          "license": "Original synthetic content written for this project (fictional Meridian Bank); released under the repository MIT license.",
+          "language": "en",
+          "synthetic": true,
+          "source_url": null,
+          "section_path": [
+            "3. Policy Exceptions",
+            "3.3 Exception Limits and Required Approver"
+          ]
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": "MB-POL-002::2.-product-parameters/2.2-aggregate-unsecured-exposure::947b9fbc34e5",
+        "doc_id": "MB-POL-002",
+        "doc_title": "Personal Loan Limits and Pricing Policy",
+        "section": "2. Product Parameters > 2.2 Aggregate Unsecured Exposure",
+        "text": "The total unsecured exposure of a customer across all Meridian Bank products (personal loans plus card limits plus overdraft limits) must not exceed USD 75,000. Any approval above this amount requires Credit Committee approval under MB-POL-005.",
+        "scores": {
+          "bm25_rank": 3.0,
+          "bm25": 17.452,
+          "vector_rank": 3.0,
+          "vector_sim": 0.8369,
+          "rrf": 0.031746
+        },
+        "metadata": {
+          "license": "Original synthetic content written for this project (fictional Meridian Bank); released under the repository MIT license.",
+          "language": "en",
+          "synthetic": true,
+          "source_url": null,
+          "section_path": [
+            "2. Product Parameters",
+            "2.2 Aggregate Unsecured Exposure"
+          ]
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": "MB-POL-002::3.-limits-by-risk-grade::3710557f3a3c",
+        "doc_id": "MB-POL-002",
+        "doc_title": "Personal Loan Limits and Pricing Policy",
+        "section": "3. Limits by Risk Grade",
+        "text": "Risk grades use the Meridian Risk Score table defined in MB-POL-001 section 3.1.\n\n| Risk grade | Maximum loan amount (USD) | Maximum DTI | APR band |\n|---|---|---|---|\n| A | 50,000 | 45% | 7.99% to 11.99% |\n| B | 35,000 | 45% | 12.00% to 16.99% |\n| C | 20,000 | 40% | 17.00% to 23.99% |\n| D | 7,500 | 35% | 24.00% to 29.99% |\n| E | Not eligible | Not applicable | Not applicable |\n\nThe DTI calculation includes the new loan installment. DTI limits may be exceeded by at most 5 percentage points through an approved exception under MB-POL-005.",
+        "scores": {
+          "bm25_rank": 2.0,
+          "bm25": 18.0099,
+          "vector_rank": 6.0,
+          "vector_sim": 0.8232,
+          "rrf": 0.031281
+        },
+        "metadata": {
+          "license": "Original synthetic content written for this project (fictional Meridian Bank); released under the repository MIT license.",
+          "language": "en",
+          "synthetic": true,
+          "source_url": null,
+          "section_path": [
+            "3. Limits by Risk Grade"
+          ]
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": "MB-POL-005::2.-delegated-approval-authority/2.1-authority-matrix::ebdeebd13df7",
+        "doc_id": "MB-POL-005",
+        "doc_title": "Credit Policy Exceptions and Approval Authority Policy",
+        "section": "2. Delegated Approval Authority > 2.1 Authority Matrix",
+        "text": "Approval authority is based on the customer's total exposure after the new credit, including all existing Meridian Bank limits and balances.\n\n| Authority level | Role | Maximum total exposure (USD) |\n|---|---|---|\n| Level 1 | Senior Credit Analyst | 10,000 |\n| Level 2 | Credit Manager | 50,000 |\n| Level 3 | Head of Retail Credit | 150,000 |\n| Committee | Retail Credit Committee | Above 150,000 |\n\nCredit Analysts below the Senior level have no individual approval authority; their recommendations must be approved by a Level 1 or higher approver.",
+        "scores": {
+          "bm25_rank": 4.0,
+          "bm25": 16.4711,
+          "vector_rank": 4.0,
+          "vector_sim": 0.8351,
+          "rrf": 0.03125
+        },
+        "metadata": {
+          "license": "Original synthetic content written for this project (fictional Meridian Bank); released under the repository MIT license.",
+          "language": "en",
+          "synthetic": true,
+          "source_url": null,
+          "section_path": [
+            "2. Delegated Approval Authority",
+            "2.1 Authority Matrix"
+          ]
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": "MB-POL-005::3.-policy-exceptions/3.1-definition::fa3968fffa18",
+        "doc_id": "MB-POL-005",
+        "doc_title": "Credit Policy Exceptions and Approval Authority Policy",
+        "section": "3. Policy Exceptions > 3.1 Definition",
+        "text": "An exception is any approval that does not meet a requirement of MB-POL-001, MB-POL-002 or MB-POL-003, for example a DTI above the limit, a loan amount above the risk grade cap, or an LTV above the maximum.",
+        "scores": {
+          "bm25_rank": 8.0,
+          "bm25": 11.7549,
+          "vector_rank": 2.0,
+          "vector_sim": 0.8458,
+          "rrf": 0.030835
+        },
+        "metadata": {
+          "license": "Original synthetic content written for this project (fictional Meridian Bank); released under the repository MIT license.",
+          "language": "en",
+          "synthetic": true,
+          "source_url": null,
+          "section_path": [
+            "3. Policy Exceptions",
+            "3.1 Definition"
+          ]
+        }
+      }
+    ],
+    "retrieval": {
+      "mode": "hybrid",
+      "reranked": false,
+      "top_k": 5,
+      "max_vector_sim": 0.8679,
+      "abstain_threshold": 0.83
+    },
+    "generation": {
+      "provider": "extractive",
+      "model": "extractive-v1",
+      "usage": {}
+    },
+    "latency_ms": {
+      "retrieval": 14.1,
+      "generation": 45.5,
+      "total": 59.6
+    }
+  }
+}

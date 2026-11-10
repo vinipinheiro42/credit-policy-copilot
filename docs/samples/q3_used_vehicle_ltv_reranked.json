@@ -1,0 +1,171 @@
+{
+  "request": {
+    "question": "What is the maximum loan-to-value for a used vehicle?",
+    "mode": null,
+    "rerank": true
+  },
+  "response": {
+    "answer": "Relevant policy text (extractive mode, no LLM):\n- Loan-to-value (LTV) is the credit amount divided by the collateral value after haircuts. [1]\n- Collateral type: New vehicle (up to 1 year old); Valuation basis: Invoice price; Maximum LTV: 90%. [1]\n- Collateral type: Used vehicle (1 to 8 years old); Valuation basis: Pricing guide value; Maximum LTV: 80%. [1]",
+    "abstained": false,
+    "support_score": 0.8655,
+    "citations": [
+      {
+        "ref": 1,
+        "doc_id": "MB-POL-003",
+        "doc_title": "Collateral and Secured Lending Policy",
+        "section": "2. Eligible Collateral and Loan-to-Value Limits > 2.1 Maximum Loan-to-Value",
+        "chunk_id": "MB-POL-003::2.-eligible-collateral-and-loan-to-value-limits/2.1-maximum-loan-to-value::b74053c065aa",
+        "snippet": "Loan-to-value (LTV) is the credit amount divided by the collateral value after haircuts. The following maximum LTVs apply at origination: | Collateral type | Valuation basis | Maximum LTV | |---|---|---| | Cash deposit or certificate of deposit held at Meridian Bank | Balance |…",
+        "page_start": null,
+        "source_url": null
+      }
+    ],
+    "contexts": [
+      {
+        "rank": 1,
+        "chunk_id": "MB-POL-003::2.-eligible-collateral-and-loan-to-value-limits/2.1-maximum-loan-to-value::b74053c065aa",
+        "doc_id": "MB-POL-003",
+        "doc_title": "Collateral and Secured Lending Policy",
+        "section": "2. Eligible Collateral and Loan-to-Value Limits > 2.1 Maximum Loan-to-Value",
+        "text": "Loan-to-value (LTV) is the credit amount divided by the collateral value after haircuts. The following maximum LTVs apply at origination:\n\n| Collateral type | Valuation basis | Maximum LTV |\n|---|---|---|\n| Cash deposit or certificate of deposit held at Meridian Bank | Balance | 100% |\n| New vehicle (up to 1 year old) | Invoice price | 90% |\n| Used vehicle (1 to 8 years old) | Pricing guide value | 80% |\n| Residential real estate, first lien | Independent appraisal | 80% |\n| Residential real estate, second lien (home equity) | Independent appraisal | 70% combined LTV |\n| Listed equities and exchange-traded funds | Market value | 50% |\n\nVehicles older than 8 years, cryptocurrencies, art, jewelry and unlisted shares are not eligible collateral.",
+        "scores": {
+          "bm25_rank": 1.0,
+          "bm25": 24.2018,
+          "vector_rank": 1.0,
+          "vector_sim": 0.8655,
+          "rrf": 0.032787,
+          "rerank": 7.3157477378845215
+        },
+        "metadata": {
+          "license": "Original synthetic content written for this project (fictional Meridian Bank); released under the repository MIT license.",
+          "language": "en",
+          "synthetic": true,
+          "source_url": null,
+          "section_path": [
+            "2. Eligible Collateral and Loan-to-Value Limits",
+            "2.1 Maximum Loan-to-Value"
+          ]
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": "MB-POL-002::2.-product-parameters/2.1-amounts-and-terms::66cd36328c9e",
+        "doc_id": "MB-POL-002",
+        "doc_title": "Personal Loan Limits and Pricing Policy",
+        "section": "2. Product Parameters > 2.1 Amounts and Terms",
+        "text": "- Minimum loan amount: USD 1,000.\n- Maximum loan amount: USD 50,000, subject to the risk grade caps in section 3.\n- Standard terms: 12 to 60 months.\n- Terms of 61 to 84 months are only available for risk grade A applicants borrowing more than USD 25,000.",
+        "scores": {
+          "bm25_rank": 7.0,
+          "bm25": 7.4669,
+          "vector_rank": 6.0,
+          "vector_sim": 0.812,
+          "rrf": 0.030077,
+          "rerank": 0.1137499064207077
+        },
+        "metadata": {
+          "license": "Original synthetic content written for this project (fictional Meridian Bank); released under the repository MIT license.",
+          "language": "en",
+          "synthetic": true,
+          "source_url": null,
+          "section_path": [
+            "2. Product Parameters",
+            "2.1 Amounts and Terms"
+          ]
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": "OCC-CH-RETAIL::examination-procedures/policies::6c431f91c2bc",
+        "doc_id": "OCC-CH-RETAIL",
+        "doc_title": "Comptroller's Handbook: Retail Lending (May 2018)",
+        "section": "Examination Procedures > Policies",
+        "text": "• maximum loan amounts by product and loan type. \n• maximum loan maturities by product and loan type. \n• amortization schedules, and standards for the acceptability of nonamortizing loans. \n• pricing structures. \n• minimum down payment requirements. \n• acceptable collateral (e.g., furniture, service contracts, and automobiles) and lien perfection requirements. \n• collateral advance rates and LTV limits (if applicable). \n• collateral valuation guidelines and methodologies.\n\n• standards for evaluating a borrower’s financial capacity, willingness as indicated through a history of timely repayment, and ability to repay. 90 \n• guidelines for purchasing loans from correspondents and other third parties.\n\n4. Review the bank’s loan and charge-off policies for consistency with the Uniform Retail Credit Classification and Account Management Policy. Consider whether\n\n• retail lending and charge-off policies are consistent with sound risk management principles. \n• periodic independent internal control reviews of consistency with the policy occur. \n• issues identified during control system reviews are resolved in an appropriate and effective manner.",
+        "scores": {
+          "bm25_rank": 6.0,
+          "bm25": 7.6062,
+          "vector_rank": 12.0,
+          "vector_sim": 0.8051,
+          "rrf": 0.02904,
+          "rerank": -3.3229637145996094
+        },
+        "metadata": {
+          "license": "U.S. federal government work prepared by OCC staff; not subject to U.S. copyright (17 U.S.C. 105). No OCC-specific reuse statement was located; attribution retained.",
+          "language": "en",
+          "page_end": 69,
+          "synthetic": false,
+          "page_start": 67,
+          "source_url": "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/retail-lending/pub-ch-retail-lending.pdf",
+          "section_path": [
+            "Examination Procedures",
+            "Policies"
+          ]
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": "MB-POL-003::7.-insurance::22b438d5583d",
+        "doc_id": "MB-POL-003",
+        "doc_title": "Collateral and Secured Lending Policy",
+        "section": "7. Insurance",
+        "text": "Vehicles and real estate used as collateral must be insured for at least the outstanding loan amount, with Meridian Bank named as loss payee. Proof of insurance is verified at origination and annually.",
+        "scores": {
+          "vector_rank": 5.0,
+          "vector_sim": 0.8193,
+          "rrf": 0.015385,
+          "rerank": -3.380809783935547
+        },
+        "metadata": {
+          "license": "Original synthetic content written for this project (fictional Meridian Bank); released under the repository MIT license.",
+          "language": "en",
+          "synthetic": true,
+          "source_url": null,
+          "section_path": [
+            "7. Insurance"
+          ]
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": "MB-POL-002::3.-limits-by-risk-grade::3710557f3a3c",
+        "doc_id": "MB-POL-002",
+        "doc_title": "Personal Loan Limits and Pricing Policy",
+        "section": "3. Limits by Risk Grade",
+        "text": "Risk grades use the Meridian Risk Score table defined in MB-POL-001 section 3.1.\n\n| Risk grade | Maximum loan amount (USD) | Maximum DTI | APR band |\n|---|---|---|---|\n| A | 50,000 | 45% | 7.99% to 11.99% |\n| B | 35,000 | 45% | 12.00% to 16.99% |\n| C | 20,000 | 40% | 17.00% to 23.99% |\n| D | 7,500 | 35% | 24.00% to 29.99% |\n| E | Not eligible | Not applicable | Not applicable |\n\nThe DTI calculation includes the new loan installment. DTI limits may be exceeded by at most 5 percentage points through an approved exception under MB-POL-005.",
+        "scores": {
+          "bm25_rank": 4.0,
+          "bm25": 8.2487,
+          "vector_rank": 3.0,
+          "vector_sim": 0.8258,
+          "rrf": 0.031498,
+          "rerank": -4.733455181121826
+        },
+        "metadata": {
+          "license": "Original synthetic content written for this project (fictional Meridian Bank); released under the repository MIT license.",
+          "language": "en",
+          "synthetic": true,
+          "source_url": null,
+          "section_path": [
+            "3. Limits by Risk Grade"
+          ]
+        }
+      }
+    ],
+    "retrieval": {
+      "mode": "hybrid",
+      "reranked": true,
+      "top_k": 5,
+      "max_vector_sim": 0.8655,
+      "abstain_threshold": 0.83
+    },
+    "generation": {
+      "provider": "extractive",
+      "model": "extractive-v1",
+      "usage": {}
+    },
+    "latency_ms": {
+      "retrieval": 502.5,
+      "generation": 102.2,
+      "total": 604.7
+    }
+  }
+}

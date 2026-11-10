@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "credit-policy-copilot"
+version = "0.1.0"
+description = "RAG assistant that answers credit-policy questions for a fictional bank, with source citations, evals and guardrails."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.12"
+authors = [{ name = "Luiz Vinicius Alves Pinheiro" }]
+dependencies = [
+  "fastapi==0.162.4",
+  "uvicorn==0.54.0",
+  "pydantic==2.14.3",
+  "pydantic-settings==2.16.2",
+  "numpy==2.5.4",
+  "rank-bm25==0.2.2",
+  "psycopg[binary]==3.3.8",
+  "pgvector==0.5.1",
+  "pypdf==7.0.1",
+  "pyyaml==6.0.3",
+  "httpx==0.28.1",
+  "opentelemetry-api==1.45.2",
+  "opentelemetry-sdk==1.45.2",
+]
+
+[project.optional-dependencies]
+# OTLP/HTTP span exporter (COPILOT_OTEL_EXPORTER=otlp)
+otel = [
+  "opentelemetry-exporter-otlp-proto-http==1.45.2",
+]
+# Local embedding + reranking models. Install torch from the CPU index first:
+#   pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
+ml = [
+  "sentence-transformers==6.2.0",
+  "transformers==5.22.2",
+]
+dev = [
+  "pytest==9.2.0",
+  "ruff==0.17.4",
+  # Embedded Postgres 16 + pgvector for integration tests when Docker is unavailable.
+  "pgserver==0.1.4; python_version < '3.13'",
+]
+
+[project.scripts]
+copilot-ingest = "copilot.ingest.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+ignore = ["RUF001", "RUF002", "RUF003"]  # allow unicode in Portuguese regulatory text handling
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+  "integration: needs a real Postgres with pgvector (DATABASE_URL or pgserver)",
+  "slow: loads real ML models",
+]

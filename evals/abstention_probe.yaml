@@ -1,0 +1,27 @@
+# Small calibration probe for the abstention threshold (M1). The full golden set (>100 questions)
+# arrives in M2; this file only checks that in-scope and out-of-scope questions separate.
+in_scope:
+  - What is the minimum bureau score for an unsecured credit card?
+  - What is the maximum initial credit limit for a risk grade B applicant?
+  - When must income be verified for a credit card application?
+  - What is the maximum loan-to-value for a used vehicle?
+  - How often must real estate collateral be revalued?
+  - At how many days past due is a credit card charged off?
+  - How many times can a customer enroll in the hardship program?
+  - Who can approve a policy exception for a total exposure of 40,000 dollars?
+  - What happens if the monthly exception rate exceeds 8%?
+  - How often are high-risk customers reviewed for KYC?
+  - Can I enter an applicant's pay slip into a public chatbot?
+  - How long are declined applications retained?
+  - What should examiners look for in credit card account management practices?
+  - What does the OCC say about policy exceptions in retail lending?
+  - Como a Resolução CMN 4.966 define ativo com problema de recuperação de crédito?
+out_of_scope:
+  - What is the capital of Australia?
+  - Write me a poem about the ocean.
+  - What's the best recipe for chocolate cake?
+  - Who won the 2018 football world cup?
+  - How do I configure a Kubernetes ingress controller?
+  - What is the weather forecast for tomorrow?
+  - Recommend a good science fiction movie.
+  - How many calories are in a banana?

@@ -1,0 +1,161 @@
+{
+  "request": {
+    "question": "What is the capital of Australia?",
+    "mode": null,
+    "rerank": null
+  },
+  "response": {
+    "answer": "I could not find this in the indexed policies. Please rephrase, or check with Retail Credit Risk.",
+    "abstained": true,
+    "support_score": 0.7417,
+    "citations": [],
+    "contexts": [
+      {
+        "rank": 1,
+        "chunk_id": "OCC-CH-RETAIL::examination-procedures/processes::fdefb05f5d95",
+        "doc_id": "OCC-CH-RETAIL",
+        "doc_title": "Comptroller's Handbook: Retail Lending (May 2018)",
+        "section": "Examination Procedures > Processes",
+        "text": "• business strategies define originate-to-sell program goals and objectives. \n• written originate-to-sell policies and operating procedures specify − industry, client, and product selection criteria. − underwriting standards by market, industry, and product. − hedging requirements and underlying controls. − limit structures for pipeline production. \n• exposure limits are used to manage concentrations by product types, economic sectors, and geographic areas. \n• controls restrict the holding period for stale inventory, requiring managers to document action plans and disposition time frames. \n• price and structural flexibility are frequently used to respond to evolving market conditions. \n• sell-down strategies are explicit and consistently documented. \n• program managers and the treasury funding desk communicate regularly to manage liquidity and funding options. \n• repurchase exposures are monitored and adequate reserves are maintained. \n• economic or regulatory capital is allocated at the time of legal commitment. \n3. Determine whether management reporting effectively supports originate-to-sell oversight, management, and monitoring. Consider whether",
+        "scores": {
+          "bm25_rank": 26.0,
+          "bm25": 3.0031,
+          "vector_rank": 8.0,
+          "vector_sim": 0.735,
+          "rrf": 0.026334
+        },
+        "metadata": {
+          "license": "U.S. federal government work prepared by OCC staff; not subject to U.S. copyright (17 U.S.C. 105). No OCC-specific reuse statement was located; attribution retained.",
+          "language": "en",
+          "page_end": 95,
+          "synthetic": false,
+          "page_start": 70,
+          "source_url": "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/retail-lending/pub-ch-retail-lending.pdf",
+          "section_path": [
+            "Examination Procedures",
+            "Processes"
+          ]
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": "OCC-CH-CREDIT-CARD::examination-procedures/third-party-or-private-label-partner-management/supplemental-examination-procedures::a6dad4ed8626",
+        "doc_id": "OCC-CH-CREDIT-CARD",
+        "doc_title": "Comptroller's Handbook: Credit Card Lending (Version 2.0, April 2021)",
+        "section": "Examination Procedures > Third-Party or Private-Label Partner Management > Supplemental Examination Procedures",
+        "text": "11. For regulatory capital purposes , determine whether all PCCRs have been deducted from common equity tier 1 capital as required by 12 CFR 3.22(a)(2). Third-Party or Private-Label Partner Management These supplemental examination procedures should be used when a bank has significant exposure to third-party or private-label partner activity. Conclusion: Based on the responses to procedures, the quantity of risk is (low, moderate, or high) and the quality of risk management (strong, satisfactory, insufficient, or weak) for the bank’s third-party management activities is. Objective: To evaluate the effectiveness of bank management’s oversight and risk management of third parties related to credit card lending. Supplemental Examination Procedures Note 1: Many of these third-party risk management-related procedures can be applied to the review of the relationship between the bank and its private -label partners. Examiners should select appropriate procedures to evaluate these relationships. Note 2: These procedures apply to any arrangements with third parties to provide credit card related services to customers on the bank’s behalf . Banks may fully outsource loan originations (using telemarketers, for example), collection activities (using collection agencies or attorneys), or the offering of products in the bank’s name . Note 3: For more information, r efer to OCC Bulletin 2013-29; OCC Bulletin 2020-10; OCC Bulletin 2002-16, “Bank Use of Foreign-Based Third-Party Service Providers: Risk Management Guidance” ; and OCC Bulletin 2017-7.",
+        "scores": {
+          "bm25_rank": 19.0,
+          "bm25": 3.6141,
+          "vector_rank": 20.0,
+          "vector_sim": 0.7305,
+          "rrf": 0.025158
+        },
+        "metadata": {
+          "license": "U.S. federal government work prepared by OCC staff; not subject to U.S. copyright (17 U.S.C. 105). No OCC-specific reuse statement was located; attribution retained. Any third-party material inside keeps its own rights.",
+          "language": "en",
+          "page_end": 117,
+          "synthetic": false,
+          "page_start": 113,
+          "source_url": "https://www.occ.gov/publications-and-resources/publications/comptrollers-handbook/files/credit-card-lending/pub-ch-credit-card.pdf",
+          "section_path": [
+            "Examination Procedures",
+            "Third-Party or Private-Label Partner Management",
+            "Supplemental Examination Procedures"
+          ]
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": "OCC-CH-CREDIT-CARD::introduction/risk-management/allowance-for-loan-and-lease-losses-or-allowance-for-credit-::8cc470d50273",
+        "doc_id": "OCC-CH-CREDIT-CARD",
+        "doc_title": "Comptroller's Handbook: Credit Card Lending (Version 2.0, April 2021)",
+        "section": "Introduction > Risk Management > Allowance for Loan and Lease Losses or Allowance for Credit Losses",
+        "text": "The card portfolio data are typically obtained directly from the sellers (or the seller’s investment bankers) and are used to determine the initial bid on the portfolio . If the bank is selected to perform a due diligence examination (because it offered one of the highest bids), it then modifies the model with enhanced data obtained during the due diligence review. The model generally creates cash flow data, income statements, balance sheets, equity flows , and other information that permits the purchaser to determine an appropriate value for the portfolio, usually based on an internal earnings hurdl e rate (the minimum acceptable rate of return on a capital investment project). Models typically include discounted cash flow models, discounted capital flow models, and return -on-asset models. For regulatory capital computations, banks must deduct all PCCRs from common equity tier 1 capital as required in accordance with 12 CFR 3.22(a)(2). The call report instructions state that banks with PCCRs “shall review the carrying amount at least quarter ly, adequately document the review, and adjust the carrying amount as necessary. ” If this review indicates that the carrying amount may not be recoverable, the intangible asset should be tested for recoverability, and any impairment loss should be recogniz ed, as described in the instruction for Schedule RC -M, item 2. Allowance for Loan and Lease Losses or Allowance for Credit Losses The methods used to establish and maintain the ALLL or ACL, as applicable, in credit card portfolios var ies among banks. Examiners should review the bank’s methodology to determine whether it is reasonable, adequately documented, and reflects consideration of the",
+        "scores": {
+          "bm25_rank": 1.0,
+          "bm25": 4.8394,
+          "rrf": 0.016393
+        },
+        "metadata": {
+          "license": "U.S. federal government work prepared by OCC staff; not subject to U.S. copyright (17 U.S.C. 105). No OCC-specific reuse statement was located; attribution retained. Any third-party material inside keeps its own rights.",
+          "language": "en",
+          "page_end": 58,
+          "synthetic": false,
+          "page_start": 58,
+          "source_url": "https://www.occ.gov/publications-and-resources/publications/comptrollers-handbook/files/credit-card-lending/pub-ch-credit-card.pdf",
+          "section_path": [
+            "Introduction",
+            "Risk Management",
+            "Allowance for Loan and Lease Losses or Allowance for Credit Losses"
+          ]
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": "OCC-CH-RETAIL::introduction/risk-management/a-sound-approach-to-credit-approvals/establishing-underwriting-criteria::ac94e60b0053",
+        "doc_id": "OCC-CH-RETAIL",
+        "doc_title": "Comptroller's Handbook: Retail Lending (May 2018)",
+        "section": "Introduction > Risk Management > A Sound Approach to Credit Approvals > Establishing Underwriting Criteria",
+        "text": "One critical aspect of credit underwriting is how to evaluate the borrower’s capacity to repay. The objective is to assess whether the borrower can reasonably afford the proposed debt along with all other credit obligations he or she may have. A primary examination objective is to consider whether bank management employs a practical, methodical, and objective process that is likely to promote sound credit decisions over time. Banks use many approaches when considering capacity. The most common approaches include the following:",
+        "scores": {
+          "vector_rank": 1.0,
+          "vector_sim": 0.7417,
+          "rrf": 0.016393
+        },
+        "metadata": {
+          "license": "U.S. federal government work prepared by OCC staff; not subject to U.S. copyright (17 U.S.C. 105). No OCC-specific reuse statement was located; attribution retained.",
+          "language": "en",
+          "page_end": 28,
+          "synthetic": false,
+          "page_start": 25,
+          "source_url": "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/retail-lending/pub-ch-retail-lending.pdf",
+          "section_path": [
+            "Introduction",
+            "Risk Management",
+            "A Sound Approach to Credit Approvals",
+            "Establishing Underwriting Criteria"
+          ]
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": "OCC-CH-CREDIT-CARD::references::37ed7355bd4d",
+        "doc_id": "OCC-CH-CREDIT-CARD",
+        "doc_title": "Comptroller's Handbook: Credit Card Lending (Version 2.0, April 2021)",
+        "section": "References",
+        "text": "020 -49, “Current Expected Credit Losses: Final Interagency Policy Statement on Allowances for Credit Losses ” OCC Bulletin 2020 -50, “Credit Risk: Interagency Guidance on Credit Risk Review Systems” OCC Bulletin 2020 -81, “Credit Risk: Risk Management of Loan Purchase Activities” OCC Bulletin 2020 -84, “Truth in Lending Act: Revised Interagency Examination Procedures ” Other Consumer Financial Protection Bureau CFPB Bulletin 2014 -2, “Marketing of Credit Card Promotional APR Offers”\n\nFinancial Accounting Standards Board ASC Subtopic 310-40, “Troubled Debt Restructurings by Creditors” ASC Topic 326, “Financial Instruments – Credit Losses” ASC Subtopic 450 -20, “Loss Contingencies” ASC Topic 606, “Revenue from Contracts with Customers” ASC Topic 810, “Consolidations” ASC Topic 860, “Transfers and Servicing” FFIEC FFIEC Bank Secrecy Act/Anti-Money Laundering Examination Manual FFIEC Information Technology Examination Handbook “Instructions for Preparation of Consolidated Reports of Condition and Income” (call report instructions)",
+        "scores": {
+          "vector_rank": 2.0,
+          "vector_sim": 0.741,
+          "rrf": 0.016129
+        },
+        "metadata": {
+          "license": "U.S. federal government work prepared by OCC staff; not subject to U.S. copyright (17 U.S.C. 105). No OCC-specific reuse statement was located; attribution retained. Any third-party material inside keeps its own rights.",
+          "language": "en",
+          "page_end": 185,
+          "synthetic": false,
+          "page_start": 182,
+          "source_url": "https://www.occ.gov/publications-and-resources/publications/comptrollers-handbook/files/credit-card-lending/pub-ch-credit-card.pdf",
+          "section_path": [
+            "References"
+          ]
+        }
+      }
+    ],
+    "retrieval": {
+      "mode": "hybrid",
+      "reranked": false,
+      "top_k": 5,
+      "max_vector_sim": 0.7417,
+      "abstain_threshold": 0.83
+    },
+    "generation": {
+      "provider": "abstain"
+    },
+    "latency_ms": {
+      "retrieval": 10.6,
+      "total": 10.6
+    }
+  }
+}

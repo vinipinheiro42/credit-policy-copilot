@@ -1,0 +1,170 @@
+{
+  "request": {
+    "question": "What is the maximum initial credit limit for a risk grade B credit card applicant?",
+    "mode": null,
+    "rerank": null
+  },
+  "response": {
+    "answer": "Relevant policy text (extractive mode, no LLM):\n- The initial credit limit is the lower of (a) the risk grade cap and (b) three times the applicant's verified net monthly income, rounded down to the nearest 100. [1]\n- Risk grade: B; Maximum initial limit (USD): 15,000. [1]\n- Risk grade: D; Maximum initial limit (USD): 3,000 (secured card only). [1]",
+    "abstained": false,
+    "support_score": 0.8902,
+    "citations": [
+      {
+        "ref": 1,
+        "doc_id": "MB-POL-001",
+        "doc_title": "Credit Card Underwriting Policy",
+        "section": "4. Credit Limit Assignment > 4.1 Limit Formula",
+        "chunk_id": "MB-POL-001::4.-credit-limit-assignment/4.1-limit-formula::b24fe4d8483a",
+        "snippet": "The initial credit limit is the lower of (a) the risk grade cap and (b) three times the applicant's verified net monthly income, rounded down to the nearest 100. | Risk grade | Maximum initial limit (USD) | |---|---| | A | 25,000 | | B | 15,000 | | C | 8,000 | | D | 3,000…",
+        "page_start": null,
+        "source_url": null
+      }
+    ],
+    "contexts": [
+      {
+        "rank": 1,
+        "chunk_id": "MB-POL-001::4.-credit-limit-assignment/4.1-limit-formula::b24fe4d8483a",
+        "doc_id": "MB-POL-001",
+        "doc_title": "Credit Card Underwriting Policy",
+        "section": "4. Credit Limit Assignment > 4.1 Limit Formula",
+        "text": "The initial credit limit is the lower of (a) the risk grade cap and (b) three times the applicant's verified net monthly income, rounded down to the nearest 100.\n\n| Risk grade | Maximum initial limit (USD) |\n|---|---|\n| A | 25,000 |\n| B | 15,000 |\n| C | 8,000 |\n| D | 3,000 (secured card only) |",
+        "scores": {
+          "bm25_rank": 1.0,
+          "bm25": 41.3557,
+          "vector_rank": 1.0,
+          "vector_sim": 0.8902,
+          "rrf": 0.032787
+        },
+        "metadata": {
+          "license": "Original synthetic content written for this project (fictional Meridian Bank); released under the repository MIT license.",
+          "language": "en",
+          "synthetic": true,
+          "source_url": null,
+          "section_path": [
+            "4. Credit Limit Assignment",
+            "4.1 Limit Formula"
+          ]
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": "MB-POL-002::3.-limits-by-risk-grade::3710557f3a3c",
+        "doc_id": "MB-POL-002",
+        "doc_title": "Personal Loan Limits and Pricing Policy",
+        "section": "3. Limits by Risk Grade",
+        "text": "Risk grades use the Meridian Risk Score table defined in MB-POL-001 section 3.1.\n\n| Risk grade | Maximum loan amount (USD) | Maximum DTI | APR band |\n|---|---|---|---|\n| A | 50,000 | 45% | 7.99% to 11.99% |\n| B | 35,000 | 45% | 12.00% to 16.99% |\n| C | 20,000 | 40% | 17.00% to 23.99% |\n| D | 7,500 | 35% | 24.00% to 29.99% |\n| E | Not eligible | Not applicable | Not applicable |\n\nThe DTI calculation includes the new loan installment. DTI limits may be exceeded by at most 5 percentage points through an approved exception under MB-POL-005.",
+        "scores": {
+          "bm25_rank": 4.0,
+          "bm25": 18.6466,
+          "vector_rank": 2.0,
+          "vector_sim": 0.8637,
+          "rrf": 0.031754
+        },
+        "metadata": {
+          "license": "Original synthetic content written for this project (fictional Meridian Bank); released under the repository MIT license.",
+          "language": "en",
+          "synthetic": true,
+          "source_url": null,
+          "section_path": [
+            "3. Limits by Risk Grade"
+          ]
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": "MB-POL-001::3.-risk-grading/3.1-meridian-risk-score::ea296fe1bc43",
+        "doc_id": "MB-POL-001",
+        "doc_title": "Credit Card Underwriting Policy",
+        "section": "3. Risk Grading > 3.1 Meridian Risk Score",
+        "text": "Every application receives a Meridian Risk Score (MRS) from the approved application scorecard. The MRS ranges from 300 to 900. The MRS is mapped to a risk grade as follows:\n\n| Risk grade | MRS range | Card decision |\n|---|---|---|\n| A | 760 to 900 | Eligible for all card products |\n| B | 700 to 759 | Eligible for all card products |\n| C | 640 to 699 | Eligible for standard cards only (no premium cards) |\n| D | 580 to 639 | Eligible for the Meridian Secured Card only |\n| E | 300 to 579 | Decline |\n\nThe same risk grade table is used by the Personal Loan Limits and Pricing Policy (MB-POL-002).",
+        "scores": {
+          "bm25_rank": 6.0,
+          "bm25": 16.6907,
+          "vector_rank": 3.0,
+          "vector_sim": 0.8581,
+          "rrf": 0.031025
+        },
+        "metadata": {
+          "license": "Original synthetic content written for this project (fictional Meridian Bank); released under the repository MIT license.",
+          "language": "en",
+          "synthetic": true,
+          "source_url": null,
+          "section_path": [
+            "3. Risk Grading",
+            "3.1 Meridian Risk Score"
+          ]
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": "OCC-CH-CREDIT-CARD::introduction/risk-management/marketing-and-underwriting-of-new-accounts/prescreened-solicitations::d18e80b4e696",
+        "doc_id": "OCC-CH-CREDIT-CARD",
+        "doc_title": "Comptroller's Handbook: Credit Card Lending (Version 2.0, April 2021)",
+        "section": "Introduction > Risk Management > Marketing and Underwriting of New Accounts > Prescreened Solicitations",
+        "text": "• Targeting consumers who have limited or poor credit histories with solicitations for a credit card with a maximum, or “up to,” credit limit that is far greater than most of these applicants are likely to receive. \n• Providing most applicants with a “default credit line” (the lowest credit line available) that is significantly lower than the maximum amount advertised, while failing to disclose fully and prominently in the promotional materials the default credit line and the possibility that the consumer will receive it. \n• Advertising possible uses of the card when the initial available credit line may be so limited that the advertised possible uses are essentially illusory. Banks should also consider providing and disclosing a readily exercisable mechanism for consumers to cancel the card at no cost when they learn the actual credit limit granted.39 38 For more information, refer to the “Unfair or Deceptive Acts or Practices and Unfair, Deceptive, or Abusive Acts or Practices” booklet of the Comptroller’s Handbook. 39 Card issuers cannot impose a fee on consumers who close their accounts. Refer to 12 CFR 1026.52(b)(2)(i)(B)(3).",
+        "scores": {
+          "bm25_rank": 2.0,
+          "bm25": 22.2923,
+          "vector_rank": 8.0,
+          "vector_sim": 0.8348,
+          "rrf": 0.030835
+        },
+        "metadata": {
+          "license": "U.S. federal government work prepared by OCC staff; not subject to U.S. copyright (17 U.S.C. 105). No OCC-specific reuse statement was located; attribution retained. Any third-party material inside keeps its own rights.",
+          "language": "en",
+          "page_end": 33,
+          "synthetic": false,
+          "page_start": 31,
+          "source_url": "https://www.occ.gov/publications-and-resources/publications/comptrollers-handbook/files/credit-card-lending/pub-ch-credit-card.pdf",
+          "section_path": [
+            "Introduction",
+            "Risk Management",
+            "Marketing and Underwriting of New Accounts",
+            "Prescreened Solicitations"
+          ]
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": "MB-POL-001::7.-monitoring::74a4832c24f5",
+        "doc_id": "MB-POL-001",
+        "doc_title": "Credit Card Underwriting Policy",
+        "section": "7. Monitoring",
+        "text": "Retail Credit Risk reports approval rate, average assigned limit, early delinquency (30+ days past due within 6 months on book) and exception rate by risk grade to the Retail Credit Committee every month.",
+        "scores": {
+          "bm25_rank": 5.0,
+          "bm25": 18.4193,
+          "vector_rank": 9.0,
+          "vector_sim": 0.8343,
+          "rrf": 0.029877
+        },
+        "metadata": {
+          "license": "Original synthetic content written for this project (fictional Meridian Bank); released under the repository MIT license.",
+          "language": "en",
+          "synthetic": true,
+          "source_url": null,
+          "section_path": [
+            "7. Monitoring"
+          ]
+        }
+      }
+    ],
+    "retrieval": {
+      "mode": "hybrid",
+      "reranked": false,
+      "top_k": 5,
+      "max_vector_sim": 0.8902,
+      "abstain_threshold": 0.83
+    },
+    "generation": {
+      "provider": "extractive",
+      "model": "extractive-v1",
+      "usage": {}
+    },
+    "latency_ms": {
+      "retrieval": 96.1,
+      "generation": 64.0,
+      "total": 160.1
+    }
+  }
+}
