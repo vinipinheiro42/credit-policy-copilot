@@ -4,8 +4,9 @@ Retrieval-augmented assistant that lets credit analysts at **Meridian Bank** (a 
 about internal credit policies and regulatory documents and get answers **with citations to the exact policy
 section**, or an explicit refusal when the documents do not cover the question.
 
-> Status: **Milestone 1** (ingestion, hybrid retrieval, API, offline extractive answers, tests).
-> Evals (100+ question golden set), guardrails, LLM generation, CI and Cloud Run deploy come next.
+> Status: **work in progress.** Milestone 1 (ingestion, hybrid retrieval, API, offline extractive answers, tests)
+> and Milestone 2 (offline evals) are done; Milestone 3 (abstention, guardrails, observability, CI draft) is
+> partial and paused. LLM generation and Cloud Run deploy are not done yet.
 > All Meridian Bank documents are synthetic. See `data/corpus/MANIFEST.yaml` for the source and reuse basis
 > of every document.
 

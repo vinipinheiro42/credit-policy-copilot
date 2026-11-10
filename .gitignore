@@ -14,3 +14,15 @@ dist/
 .venv-ci/
 .cache/
 *.log
+
+# --- publish baseline (required) ---
+.venv/
+.pgdata/
+.env
+__pycache__/
+*.pkl
+*.parquet
+*.duckdb
+logs/
+*.log
+.forbidden-terms
